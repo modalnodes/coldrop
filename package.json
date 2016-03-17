@@ -5,8 +5,10 @@
   "scripts": {
   },
   "dependencies": {
-"johnny-five":"0.9.30",
-"raspi-io": "5.4.1"
+    "raspi-io": "5.4.1",
+    "johnny-five":"0.9.2",
+    "async":"1.5.2",
+    "cron": "1.1.0"
   },
   "devDependencies": {
 
