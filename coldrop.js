@@ -74,17 +74,18 @@ board.on('ready', function() {
     boiler_try: boiler_try
   });
 
-
-
-
-
-
-
-
 });
 
+var boiler_on_saturday = new CronJob({
+cronTime: '00 12 00 * * 6',
+onTick: function(){
+  boiler.off();
+},
+start:false,
+timeZone:'Europe/Rome'
+});
 
-
+boiler_on_saturday.start();
 var boiler_on = new CronJob({
   cronTime: '00 30 07 * * 1-5',
   onTick: function() {
