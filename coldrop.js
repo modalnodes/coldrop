@@ -85,6 +85,8 @@ var boiler_on_saturday = new CronJob({
 cronTime: '00 12 00 * * 6',
 onTick: function(){
   boiler.off();
+  setTimeout(boiler.toggle(), 2000);
+  setTimeout(boiler.off(), 2000);
 },
 start:false,
 timeZone:'Europe/Rome'
@@ -94,9 +96,16 @@ boiler_on_saturday.start();
 var boiler_on = new CronJob({
   cronTime: '00 30 07 * * 1-5',
   onTick: function() {
+<<<<<<< HEAD
 
 
     boiler.off();
+=======
+  
+    setTimeout(boiler.toggle(), 2000);
+    setTimeout(boiler.off(), 2000);
+    setTimeout(boiler.off(), 2000);
+>>>>>>> 1a240957e9121bd211805657599f7760b5245209
   },
   start: false,
   timeZone: 'Europe/Rome'
@@ -107,7 +116,7 @@ var boiler_off = new CronJob({
   cronTime: '00 20 19 * * 1-5',
   onTick: function() {
     boiler.on();
-
+    setTimeout(boiler.on(), 2000);
     console.log("boiler is off");
   },
   start: false,
