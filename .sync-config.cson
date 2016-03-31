@@ -1,5 +1,5 @@
 remote:
-  host: "192.168.0.112:22"
+  host: "192.168.0.108:22"
   user: "pi"
   path: "/home/pi/coldrop"
 behaviour:

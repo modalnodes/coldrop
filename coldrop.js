@@ -24,7 +24,7 @@ var board = new five.Board({
 
 board.on('ready', function() {
 
-  temp = new five.Temperature({
+  temp = new five.Thermometer({
     controller: "BMP180",
     freq: 5000
   });
@@ -34,7 +34,9 @@ board.on('ready', function() {
       console.log(err);
       return;
     }
-    /*  console.log("celsius: %d", data.C);
+
+
+      /*console.log("celsius: %d", data.C);
       console.log("fahrenheit: %d", data.F);
       console.log("kelvin: %d", data.K);
       console.log("err: %d", err);*/
@@ -56,14 +58,17 @@ board.on('ready', function() {
     freq: 5000
   });
 
-  bar.on("data", function() {
-    /*  console.log("barometer");
+  bar.on("data", function() {/*
+      console.log("barometer");
       console.log(" pressure : ", this.pressure);
       console.log("-----------------------------------------");*/
   });
 
   /* "boiler" is the real relay connected  between rasp and the boiler */
-  boiler = new five.Relay(pin_boiler_real);
+  boiler = new five.Relay({
+  pin: pin_boiler_real,
+  type: "NC"
+});
 
 
   /* "boiler_try" is a free relay connected to rasp*/
@@ -89,6 +94,8 @@ boiler_on_saturday.start();
 var boiler_on = new CronJob({
   cronTime: '00 30 07 * * 1-5',
   onTick: function() {
+
+
     boiler.off();
   },
   start: false,
@@ -107,3 +114,7 @@ var boiler_off = new CronJob({
   timeZone: 'Europe/Rome'
 });
 boiler_off.start();
+
+function test(){
+  console.log(boiler.isOn());
+}

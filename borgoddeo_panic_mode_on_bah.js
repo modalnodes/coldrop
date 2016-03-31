@@ -5,7 +5,7 @@ var five = require('johnny-five');
 var boiler;
 var boiler_pin = 7;
 var name_of_boiler = 'borgoddeo';
-
+var temp;
 var board = new five.Board({
   io: new raspi()
 });
@@ -16,6 +16,27 @@ console.log(name_of_boiler+".toggle(); per invertire lo stato del relay.... aper
 
 console.log("\n se trovi 3 luci rosse e una blu accese, forse non tremerai dal freddo oggi");
 board.on('ready', function() {
+
+
+
+  temp = new five.Thermometer({
+    controller: "BMP180",
+    freq: 5000
+  });
+
+  temp.on("data", function(data, err) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+      console.log("celsius: %d", data.C);
+      console.log("fahrenheit: %d", data.F);
+      console.log("kelvin: %d", data.K);
+      console.log("err: %d", err);
+  });
+
+
+
   boiler = new five.Relay(boiler_pin);
 
 
