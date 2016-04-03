@@ -9,18 +9,18 @@ var config = require('./res/config');
 
 var fs = require('fs');
 var obj = JSON.parse(fs.readFileSync('./res/config.json', 'utf8'));
-console.log(obj);
-/* pins  wiringPi*/
-var pin_boiler_try = 2
-var pin_boiler_real = 7
 
+/* pins  wiringPi*/
+var pin_boiler_try = 2;
+var pin_boiler_real = 7;
+var cron_jobs = [];
 var temp, bar, boiler_try, boiler;
 
 var board = new five.Board({
   io: new raspi()
 });
 
-
+console.log("setup the board");
 
 board.on('ready', function() {
 
@@ -34,7 +34,6 @@ board.on('ready', function() {
       console.log(err);
       return;
     }
-
 
       /*console.log("celsius: %d", data.C);
       console.log("fahrenheit: %d", data.F);
@@ -81,7 +80,7 @@ board.on('ready', function() {
 
 
 
-
+/*
   var button = new five.Button(1);
 
   button.on("hold", function() {
@@ -95,9 +94,31 @@ board.on('ready', function() {
   button.on("release", function() {
     console.log( "Button released" );
   });
-
+*/
 });
+function parse(){
 
+  console.log("parsing config.json...");
+  for (var item of obj.config.program){
+
+    var chrono = '00 '+item.start.minute+' '+item.start.hour+' * * '+item.day;
+    console.log("chrono " + chrono);
+
+     cron_jobs.push(new CronJob({
+       cronTime: chrono,
+       onTick: function() {
+
+
+         /*     */
+       },
+       start: true,
+       timeZone: 'Europe/Rome'
+     }));
+  }
+
+}
+
+parse();
 var boiler_on_saturday = new CronJob({
 cronTime: '00 00 12 * * 6',
 onTick: function(){
