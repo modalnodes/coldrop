@@ -10,7 +10,7 @@ var logger = require('./custom/logger');
 logger.info("reading 'config.json'...");
 var fs = require('fs');
 var obj = JSON.parse(fs.readFileSync('./res/config.json', 'utf8'));
-
+logger.info("completed");
 /* pins  wiringPi*/
 var pin_boiler_try = 2;
 var pin_boiler_real = 7;
@@ -64,7 +64,7 @@ board.on('ready', function() {
   /* "boiler_try" is a free relay connected to rasp*/
   boiler_try = new five.Relay(pin_boiler_try);
 
-parse(boiler);
+createChrono(boiler);
   this.repl.inject({
     boiler: boiler,
     boiler_try: boiler_try
@@ -88,13 +88,15 @@ parse(boiler);
   });
 */
 });
-function parse(boiler){
+function createChrono(boiler){
 
   logger.info("parsing 'config.json'...");
+  var numberChrono = 0;
   for (var item of obj.config.program){
 
     var chrono_start = '00 '+item.start.minute+' '+item.start.hour+' * * '+item.day;
-    logger.info("chrono start " + chrono_start);
+    numberChrono = numberChrono +1
+    logger.info(numberChrono+" chrono start " + chrono_start);
 
      cron_jobs.push(new CronJob({
        cronTime: chrono_start,
@@ -111,11 +113,11 @@ function parse(boiler){
        start: true,
        timeZone: 'Europe/Rome'
      }));
-  }
 
-for (var item of obj.config.program){
+
+
   var chrono_end = '00 '+item.end.minute+' '+item.end.hour+' * * '+item.day;
-  logger.info("chrono end " + chrono_end);
+  logger.info(numberChrono + " chrono end " + chrono_end);
 
    cron_jobs.push(new CronJob({
      cronTime: chrono_end,
@@ -132,52 +134,10 @@ for (var item of obj.config.program){
      start: true,
      timeZone: 'Europe/Rome'
    }));
-   logger.info("parsing finished");
+
  }
+
+
+
+ logger.info("parsing finished");
 }
-
-
-
-
-
-// var boiler_on_saturday = new CronJob({
-// cronTime: '00 00 12 * * 6',
-// onTick: function(){
-//   boiler.off();
-//   setTimeout(boiler.toggle(), 2000);
-//   setTimeout(boiler.off(), 2000);
-// },
-// start:false,
-// timeZone:'Europe/Rome'
-// });
-//
-// boiler_on_saturday.start();
-// var boiler_on = new CronJob({
-//   cronTime: '00 30 07 * * 1-5',
-//   onTick: function() {
-//
-//
-//
-//     boiler.off();
-//
-//   },
-//   start: false,
-//   timeZone: 'Europe/Rome'
-// });
-// boiler_on.start();
-//
-// var boiler_off = new CronJob({
-//   cronTime: '00 20 19 * * 1-5',
-//   onTick: function() {
-//     boiler.on();
-//     setTimeout(boiler.on(), 2000);
-//     console.log("boiler is off");
-//   },
-//   start: false,
-//   timeZone: 'Europe/Rome'
-// });
-// boiler_off.start();
-//
-// function test(){
-//   console.log(boiler.isOn());
-// }

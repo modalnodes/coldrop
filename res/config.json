@@ -2,6 +2,17 @@
   "config": {
     "program": [{
       "start": {
+        "hour": "7",
+        "minute": "30"
+      },
+      "end": {
+        "hour": "13",
+        "minute": "30"
+      },
+      "temp": "20",
+      "day": "1-5"
+    },{
+      "start": {
         "hour": "17",
         "minute": "28"
       },
