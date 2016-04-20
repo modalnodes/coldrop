@@ -2,12 +2,46 @@
   "config": {
     "program": [{
       "start": {
-        "hour": "07",
-        "minute": "00"
+        "hour": "17",
+        "minute": "28"
       },
       "end": {
-        "hour": "18",
-        "minute": "00"
+        "hour": "17",
+        "minute": "29"
+      },
+      "temp": "20",
+      "day": "1-5"
+    },
+    {
+      "start": {
+        "hour": "17",
+        "minute": "31"
+      },
+      "end": {
+        "hour": "17",
+        "minute": "32"
+      },
+      "temp": "20",
+      "day": "1-5"
+    },{
+      "start": {
+        "hour": "17",
+        "minute": "33"
+      },
+      "end": {
+        "hour": "17",
+        "minute": "35"
+      },
+      "temp": "20",
+      "day": "1-5"
+    },{
+      "start": {
+        "hour": "17",
+        "minute": "37"
+      },
+      "end": {
+        "hour": "17",
+        "minute": "40"
       },
       "temp": "20",
       "day": "1-5"
