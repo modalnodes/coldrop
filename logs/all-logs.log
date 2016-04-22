@@ -1,27 +1,55 @@
-April 22nd 2016, 8:08:58 pm - info: reading 'NaN'...
-April 22nd 2016, 8:08:58 pm - info: completed
-April 22nd 2016, 8:08:58 pm - info: setup the board
-April 22nd 2016, 8:08:58 pm - info: parsing 'config.json'...
-April 22nd 2016, 8:08:58 pm - info: 1 chrono start 00 30 7 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 1 chrono end 00 30 13 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 2 chrono start 00 28 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 2 chrono end 00 29 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 3 chrono start 00 31 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 3 chrono end 00 32 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 4 chrono start 00 33 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 4 chrono end 00 35 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 5 chrono start 00 36 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 5 chrono end 00 40 17 * * 1-5
-April 22nd 2016, 8:08:58 pm - info: 6 chrono start 00 30 10 * * 6
-April 22nd 2016, 8:08:58 pm - info: 6 chrono end 00 30 18 * * 6
-April 22nd 2016, 8:08:58 pm - info: 7 chrono start 00 00 14 * * 0
-April 22nd 2016, 8:08:58 pm - info: 7 chrono end 00 10 19 * * 0
-April 22nd 2016, 8:08:58 pm - info: parsing finished
-April 22nd 2016, 8:09:03 pm - info: temperature changes: 20.3°
-April 22nd 2016, 8:09:03 pm - info: onChange: boiler is now ON
-April 22nd 2016, 8:09:03 pm - info: onChange - boiler is ON: 'true', with a temperature of 20.3°C
-April 22nd 2016, 8:10:52 pm - error: uncaughtException: filename is not defined date=Fri Apr 22 2016 20:10:52 GMT+0200 (CEST), pid=25271, uid=0, gid=0, cwd=/home/pi/coldrop, execPath=/usr/bin/nodejs, version=v5.9.0, argv=[/usr/bin/nodejs, /home/pi/coldrop/coldrop.js], rss=34291712, heapTotal=18204948, heapUsed=11573148, loadavg=[0.21240234375, 0.15869140625, 0.1357421875], uptime=187831, trace=[column=39, file=/home/pi/coldrop/coldrop.js, function=, line=19, method=null, native=false, column=13, file=events.js, function=emitTwo, line=100, method=null, native=false, column=7, file=events.js, function=FSWatcher.emit, line=185, method=emit, native=false, column=12, file=fs.js, function=FSEvent.FSWatcher._handle.onchange, line=1300, method=FSWatcher._handle.onchange, native=false], stack=[ReferenceError: filename is not defined,     at FSWatcher.<anonymous> (/home/pi/coldrop/coldrop.js:19:39),     at emitTwo (events.js:100:13),     at FSWatcher.emit (events.js:185:7),     at FSEvent.FSWatcher._handle.onchange (fs.js:1300:12)]
-April 22nd 2016, 8:10:52 pm - error: uncaughtException: filename is not defined date=Fri Apr 22 2016 20:10:52 GMT+0200 (CEST), pid=25271, uid=0, gid=0, cwd=/home/pi/coldrop, execPath=/usr/bin/nodejs, version=v5.9.0, argv=[/usr/bin/nodejs, /home/pi/coldrop/coldrop.js], rss=34291712, heapTotal=18204948, heapUsed=11753748, loadavg=[0.21240234375, 0.15869140625, 0.1357421875], uptime=187831, trace=[column=39, file=/home/pi/coldrop/coldrop.js, function=, line=19, method=null, native=false, column=13, file=events.js, function=emitTwo, line=100, method=null, native=false, column=7, file=events.js, function=FSWatcher.emit, line=185, method=emit, native=false, column=12, file=fs.js, function=FSEvent.FSWatcher._handle.onchange, line=1300, method=FSWatcher._handle.onchange, native=false], stack=[ReferenceError: filename is not defined,     at FSWatcher.<anonymous> (/home/pi/coldrop/coldrop.js:19:39),     at emitTwo (events.js:100:13),     at FSWatcher.emit (events.js:185:7),     at FSEvent.FSWatcher._handle.onchange (fs.js:1300:12)]
-April 22nd 2016, 8:11:18 pm - info: temperature changes: 20.2°
-April 22nd 2016, 8:11:18 pm - info: onChange: boiler is already ON
-April 22nd 2016, 8:11:18 pm - info: onChange - boiler is ON: 'true', with a temperature of 20.2°C
+April 23rd 2016, 12:50:34 am - info: reading 'NaN'...
+April 23rd 2016, 12:50:34 am - info: completed
+April 23rd 2016, 12:50:34 am - info: setup the board
+April 23rd 2016, 12:50:34 am - info: initializing relay..
+April 23rd 2016, 12:50:34 am - info: finished
+April 23rd 2016, 12:50:34 am - info: parsing 'config.json'...
+April 23rd 2016, 12:50:34 am - info: 1 chrono start 00 57 23 * * 1-5
+April 23rd 2016, 12:50:34 am - info: 1 chrono end 00 40 18 * * 1-5
+April 23rd 2016, 12:50:34 am - info: 2 chrono start 00 25 00 * * 6
+April 23rd 2016, 12:50:34 am - info: 2 chrono end 00 05 00 * * 6
+April 23rd 2016, 12:50:34 am - info: 3 chrono start 00 00 14 * * 0
+April 23rd 2016, 12:50:34 am - info: 3 chrono end 00 10 19 * * 0
+April 23rd 2016, 12:50:34 am - info: parsing finished
+April 23rd 2016, 12:50:39 am - info: temperature changes: 20.2°
+April 23rd 2016, 12:50:44 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:51:54 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:51:59 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:52:04 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:52:09 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:52:23 am - info: config.json change, realoading the program...
+April 23rd 2016, 12:52:23 am - info: parsing 'config.json'...
+April 23rd 2016, 12:52:23 am - info: 1 chrono start 00 57 23 * * 1-5
+April 23rd 2016, 12:52:23 am - info: 1 chrono end 00 40 18 * * 1-5
+April 23rd 2016, 12:52:23 am - info: 2 chrono start 00 54 00 * * 6
+April 23rd 2016, 12:52:23 am - info: 2 chrono end 00 05 00 * * 6
+April 23rd 2016, 12:52:23 am - info: 3 chrono start 00 00 14 * * 0
+April 23rd 2016, 12:52:23 am - info: 3 chrono end 00 10 19 * * 0
+April 23rd 2016, 12:52:23 am - info: parsing finished
+April 23rd 2016, 12:52:23 am - info: realoaded
+April 23rd 2016, 12:52:23 am - info: config.json change, realoading the program...
+April 23rd 2016, 12:52:23 am - info: parsing 'config.json'...
+April 23rd 2016, 12:52:23 am - info: 1 chrono start 00 57 23 * * 1-5
+April 23rd 2016, 12:52:23 am - info: 1 chrono end 00 40 18 * * 1-5
+April 23rd 2016, 12:52:23 am - info: 2 chrono start 00 54 00 * * 6
+April 23rd 2016, 12:52:23 am - info: 2 chrono end 00 05 00 * * 6
+April 23rd 2016, 12:52:23 am - info: 3 chrono start 00 00 14 * * 0
+April 23rd 2016, 12:52:23 am - info: 3 chrono end 00 10 19 * * 0
+April 23rd 2016, 12:52:23 am - info: parsing finished
+April 23rd 2016, 12:52:23 am - info: realoaded
+April 23rd 2016, 12:52:24 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:52:29 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:52:34 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:53:09 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:53:19 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:54:00 am - info: chrono: boiler is now ON
+April 23rd 2016, 12:55:49 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:55:49 am - info: onChange - boiler is ON: 'true', with a temperature of 20.3°C
+April 23rd 2016, 12:55:54 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:55:54 am - info: onChange - boiler is ON: 'true', with a temperature of 20.4°C
+April 23rd 2016, 12:56:09 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:56:09 am - info: onChange - boiler is ON: 'true', with a temperature of 20.3°C
+April 23rd 2016, 12:56:14 am - info: temperature changes: 20.4°
+April 23rd 2016, 12:56:14 am - info: onChange - boiler is ON: 'true', with a temperature of 20.4°C
+April 23rd 2016, 12:56:24 am - info: temperature changes: 20.3°
+April 23rd 2016, 12:56:24 am - info: onChange - boiler is ON: 'true', with a temperature of 20.3°C

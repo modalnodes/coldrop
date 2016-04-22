@@ -2,76 +2,27 @@
   "config": {
     "program": [{
       "start": {
-        "hour": "7",
-        "minute": "30"
-      },
-      "end": {
-        "hour": "13",
-        "minute": "30"
-      },
-      "temp": 20,
-      "tollerance" : 0.5,
-      "day": "1-5"
-    },{
-      "start": {
-        "hour": "17",
-        "minute": "28"
-      },
-      "end": {
-        "hour": "17",
-        "minute": "29"
-      },
-      "temp": 20,
-      "tollerance" : 0.5,
-      "day": "1-5"
-    },
-    {
-      "start": {
-        "hour": "17",
-        "minute": "31"
-      },
-      "end": {
-        "hour": "17",
-        "minute": "32"
-      },
-      "temp": 20,
-      "tollerance" : 0.5,
-      "day": "1-5"
-    },{
-      "start": {
-        "hour": "17",
-        "minute": "33"
-      },
-      "end": {
-        "hour": "17",
-        "minute": "35"
-      },
-      "temp": 20,
-      "tollerance" : 0.5,
-      "day": "1-5"
-    },{
-      "start": {
-        "hour": "17",
-        "minute": "36"
-      },
-      "end": {
-        "hour": "19",
-        "minute": "40"
-      },
-      "temp": 20,
-      "tollerance" : 0.5,
-      "day": "1-5"
-    },{
-      "start": {
-        "hour": "10",
-        "minute": "30"
+        "hour": "23",
+        "minute": "57"
       },
       "end": {
         "hour": "18",
-        "minute": "30"
+        "minute": "40"
       },
       "temp": 20,
-      "tollerance" : 0.5,
+      "tollerance" : 0,
+      "day": "1-5"
+    },{
+      "start": {
+        "hour": "00",
+        "minute": "59"
+      },
+      "end": {
+        "hour": "01",
+        "minute": "01"
+      },
+      "temp": 20.3,
+      "tollerance" : 0.1,
       "day": "6"
     },{
       "start": {

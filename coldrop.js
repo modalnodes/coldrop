@@ -6,27 +6,26 @@ var CronJob = require('cron').CronJob;
 
 var config = require('./res/config');
 var logger = require('./custom/logger');
+
+
+var fs = require('fs');
+
+
+
+
+
+
 var configFileName = 'config.json';
 logger.info("reading '%d'...", configFileName);
-var fs = require('fs');
 var obj = JSON.parse(fs.readFileSync('./res/'+configFileName, 'utf8'));
 logger.info("completed");
-
-
-fs.watch('./res/'+configFileName, (event, configFileName) => {
-  console.log(`event is: ${event}`);
-  if (configFileName) {
-    console.log(`filename provided: ${filename}`);
-  } else {
-    console.log('filename not provided');
-  }
-});
-
+var cron_jobs = [];
+var currentProgram = undefined;
+var programActive = false;
 
 /* pins  wiringPi*/
 var pin_boiler_try = 2;
 var pin_boiler_real = 7;
-var cron_jobs = [];
 var temp, bar, boiler_try, boiler;
 
 var board = new five.Board({
@@ -41,9 +40,9 @@ board.on('ready', function() {
 
   /* "boiler" is the real relay connected  between rasp and the boiler */
   boiler = new five.Relay({
-  pin: pin_boiler_real,
-  type: "NC"
-});
+    pin: pin_boiler_real,
+    type: "NC"
+  });
 
 
   /* "boiler_try" is a free relay connected to rasp*/
@@ -54,8 +53,10 @@ board.on('ready', function() {
     freq: 5000
   });
 
+  logger.info("initializing relay..");
   boiler.on();
   boiler.off();
+  logger.info("finished");
 
   temp.on("change", function(data, err) {
     if (err) {
@@ -66,7 +67,13 @@ board.on('ready', function() {
       logger.debug("celsius: %d", data.C);
       logger.debug("fahrenheit: %d", data.F);
       logger.debug("kelvin: %d", data.K);
-      onChangeTemp(22, data.C, 0.5);
+
+      if(currentProgram !== undefined && programActive !== false){
+        onChangeTemp(obj.config.program[currentProgram].temp, data.C, obj.config.program[currentProgram].tollerance);
+      } else {
+
+      }
+
   });
 
 
@@ -81,17 +88,10 @@ board.on('ready', function() {
       console.log("-----------------------------------------");*/
   });
 
-
-
-createChrono(boiler);
-
-
   this.repl.inject({
     boiler: boiler,
     boiler_try: boiler_try
   });
-
-
 
 /*
   var button = new five.Button(1);
@@ -108,30 +108,50 @@ createChrono(boiler);
     console.log( "Button released" );
   });
 */
+createChrono(boiler);
+
+  fs.watch('./res/'+configFileName, (event, configFileName) => {
+    if (event==='change') {
+      currentProgram = undefined;
+      logger.info(configFileName+" change, realoading the program...");
+      logger.debug(cron_jobs.length);
+      for(var chrono of cron_jobs){
+        chrono.stop();
+      }
+      cron_jobs = [];
+      obj = JSON.parse(fs.readFileSync('./res/'+configFileName, 'utf8'));
+      createChrono(boiler);
+       logger.info("realoaded");
+
+    }
+  });
+
 });
+
+
 function onChangeTemp(temp,currentTemp, tollerance){
-var deltaTemp = 0;
-deltaTemp = currentTemp - temp;
+  var deltaTemp = 0;
+  deltaTemp = currentTemp - temp;
 
-if (deltaTemp > tollerance) {
-    if(!boiler.isOn){
-      logger.info("onChange: boiler is already OFF");
-    }else {
-      boiler.off();
-      logger.info("onChange: boiler is now OFF");
-    }
-}
-deltaTemp = temp - currentTemp;
-if (deltaTemp > tollerance) {
-    if(boiler.isOn){
-      logger.info("onChange: boiler is already ON");
-    }else {
-      boiler.on();
-      logger.info("onChange: boiler is now ON");
-    }
-}
+  if (deltaTemp > tollerance) {
+      if(!boiler.isOn){
+        logger.info("onChange: boiler is already OFF");
+      }else {
+        boiler.off();
+        logger.info("onChange: boiler is now OFF");
+      }
+  }
+  deltaTemp = temp - currentTemp;
+  if (deltaTemp > tollerance) {
+      if(boiler.isOn){
+        logger.info("onChange: boiler is already ON");
+      }else {
+        boiler.on();
+        logger.info("onChange: boiler is now ON");
+      }
+  }
 
-logger.info("onChange - boiler is ON: '"+boiler.isOn+"', with a temperature of %d°C", currentTemp);
+  logger.info("onChange - boiler is ON: '"+boiler.isOn+"', with a temperature of %d°C", currentTemp);
 
 
 }
@@ -141,7 +161,7 @@ function createChrono(boiler){
   logger.info("parsing 'config.json'...");
   var numberChrono = 0;
   for (var item of obj.config.program){
-
+    var numberProgram = clone(numberChrono);
     var chrono_start = '00 '+item.start.minute+' '+item.start.hour+' * * '+item.day;
     numberChrono = numberChrono +1
     logger.info(numberChrono+" chrono start " + chrono_start);
@@ -149,6 +169,8 @@ function createChrono(boiler){
      cron_jobs.push(new CronJob({
        cronTime: chrono_start,
        onTick: function() {
+            programActive = true;
+            currentProgram = clone(numberProgram);
             if(boiler.isOn){
               logger.info("chrono: boiler is already ON");
             } else {
@@ -168,6 +190,7 @@ function createChrono(boiler){
    cron_jobs.push(new CronJob({
      cronTime: chrono_end,
      onTick: function() {
+          programActive = false;
           if(!boiler.isOn){
             logger.info("chrono: boiler is already OFF");
           } else {
@@ -183,16 +206,14 @@ function createChrono(boiler){
 
  }
 
-
-
  logger.info("parsing finished");
 }
 
-
+function clone(a) { return JSON.parse(JSON.stringify(a)); }
 
 
 function chronoToDate(chrono){
 
-
+  //todo
 
 }
