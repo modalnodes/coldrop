@@ -2,18 +2,16 @@
   "name": "coldrop",
   "version": "1.0.0",
   "main": "coldrop.js",
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
-    "raspi-io": "5.4.1",
-    "johnny-five":"~0.9.35",
-    "async":"1.5.2",
+    "async": "1.5.2",
     "cron": "1.1.0",
+    "johnny-five": "~0.9.35",
+    "moment": "^2.13.0",
+    "raspi-io": "5.4.1",
     "winston": "2.2.0"
   },
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "repository": {
     "type": "",
     "url": ""

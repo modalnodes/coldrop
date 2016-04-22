@@ -9,7 +9,8 @@
         "hour": "13",
         "minute": "30"
       },
-      "temp": "20",
+      "temp": 20,
+      "tollerance" : 0.5,
       "day": "1-5"
     },{
       "start": {
@@ -20,7 +21,8 @@
         "hour": "17",
         "minute": "29"
       },
-      "temp": "20",
+      "temp": 20,
+      "tollerance" : 0.5,
       "day": "1-5"
     },
     {
@@ -32,7 +34,8 @@
         "hour": "17",
         "minute": "32"
       },
-      "temp": "20",
+      "temp": 20,
+      "tollerance" : 0.5,
       "day": "1-5"
     },{
       "start": {
@@ -43,19 +46,45 @@
         "hour": "17",
         "minute": "35"
       },
-      "temp": "20",
+      "temp": 20,
+      "tollerance" : 0.5,
       "day": "1-5"
     },{
       "start": {
         "hour": "17",
-        "minute": "37"
+        "minute": "36"
       },
       "end": {
-        "hour": "17",
+        "hour": "19",
         "minute": "40"
       },
-      "temp": "20",
+      "temp": 20,
+      "tollerance" : 0.5,
       "day": "1-5"
+    },{
+      "start": {
+        "hour": "10",
+        "minute": "30"
+      },
+      "end": {
+        "hour": "18",
+        "minute": "30"
+      },
+      "temp": 20,
+      "tollerance" : 0.5,
+      "day": "6"
+    },{
+      "start": {
+        "hour": "14",
+        "minute": "00"
+      },
+      "end": {
+        "hour": "19",
+        "minute": "10"
+      },
+      "temp": 20,
+      "tollerance" : 0.5,
+      "day": "0"
     }],
     "days": [0, 1, 2, 3, 4, 5, 6]
   }
