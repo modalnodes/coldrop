@@ -16,9 +16,11 @@ var fs = require('fs');
 
 
 var configFileName = 'config.json';
+
 logger.info("reading '%d'...", configFileName);
 var obj = JSON.parse(fs.readFileSync('./res/'+configFileName, 'utf8'));
 logger.info("completed");
+
 var cron_jobs = [];
 var currentProgram = undefined;
 var programActive = false;
