@@ -1,0 +1,373 @@
+April 29th 2016, 3:03:25 pm - info: reading 'config.json'...
+April 29th 2016, 3:03:25 pm - info: completed
+April 29th 2016, 3:03:25 pm - info: setup the board
+April 29th 2016, 3:03:25 pm - info: initializing relay..
+April 29th 2016, 3:03:25 pm - info: finished
+April 29th 2016, 3:03:25 pm - info: override mode is active
+April 29th 2016, 3:03:25 pm - info: temperature selected: 20
+April 29th 2016, 3:03:25 pm - info: tollerance: 0.2
+April 29th 2016, 3:03:25 pm - info: chrono: boiler is now ON
+April 29th 2016, 3:03:30 pm - info: temperature changes: 19.9°
+April 29th 2016, 3:03:30 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 3:04:05 pm - info: temperature changes: 20°
+April 29th 2016, 3:04:05 pm - info: onChange - boiler is ON: 'true', with a temperature of 20°C
+April 29th 2016, 3:04:30 pm - info: temperature changes: 20.1°
+April 29th 2016, 3:04:30 pm - info: onChange - boiler is ON: 'true', with a temperature of 20.1°C
+April 29th 2016, 3:04:50 pm - info: temperature changes: 20.2°
+April 29th 2016, 3:04:50 pm - info: onChange - boiler is ON: 'true', with a temperature of 20.2°C
+April 29th 2016, 3:04:55 pm - info: temperature changes: 20.1°
+April 29th 2016, 3:04:55 pm - info: onChange - boiler is ON: 'true', with a temperature of 20.1°C
+April 29th 2016, 3:07:15 pm - info: temperature changes: 20°
+April 29th 2016, 3:07:15 pm - info: onChange - boiler is ON: 'true', with a temperature of 20°C
+April 29th 2016, 3:08:10 pm - info: temperature changes: 20.1°
+April 29th 2016, 3:08:10 pm - info: onChange - boiler is ON: 'true', with a temperature of 20.1°C
+April 29th 2016, 3:08:35 pm - info: temperature changes: 20°
+April 29th 2016, 3:08:35 pm - info: onChange - boiler is ON: 'true', with a temperature of 20°C
+April 29th 2016, 3:09:30 pm - info: temperature changes: 19.9°
+April 29th 2016, 3:09:30 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 3:09:35 pm - info: temperature changes: 20°
+April 29th 2016, 3:09:35 pm - info: onChange - boiler is ON: 'true', with a temperature of 20°C
+April 29th 2016, 3:09:40 pm - info: temperature changes: 19.9°
+April 29th 2016, 3:09:40 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 3:11:40 pm - info: temperature changes: 19.8°
+April 29th 2016, 3:11:40 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 3:13:45 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:13:45 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:13:45 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:13:55 pm - info: temperature changes: 19.8°
+April 29th 2016, 3:13:55 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 3:14:00 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:14:00 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:14:00 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:14:30 pm - info: temperature changes: 19.8°
+April 29th 2016, 3:14:30 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 3:14:35 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:14:35 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:14:35 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:16:20 pm - info: temperature changes: 19.8°
+April 29th 2016, 3:16:20 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 3:16:45 pm - info: temperature changes: 19.9°
+April 29th 2016, 3:16:45 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 3:17:00 pm - info: temperature changes: 19.8°
+April 29th 2016, 3:17:00 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 3:17:30 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:17:30 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:17:30 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:24:10 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:24:10 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:24:10 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:24:15 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:24:15 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:24:15 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:24:35 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:24:35 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:24:35 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:24:55 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:24:55 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:24:55 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:25:50 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:25:50 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:25:50 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:25:55 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:25:55 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:25:55 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:26:10 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:26:10 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:26:10 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:26:15 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:26:15 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:26:15 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:26:30 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:26:30 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:26:30 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:31:16 pm - info: temperature changes: 19.5°
+April 29th 2016, 3:31:16 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:31:16 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 3:31:26 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:31:26 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:31:26 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:31:36 pm - info: temperature changes: 19.5°
+April 29th 2016, 3:31:36 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:31:36 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 3:31:51 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:31:51 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:31:51 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:32:26 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:32:26 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:32:26 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:33:06 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:33:06 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:33:06 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:34:21 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:34:21 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:34:21 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:34:46 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:34:46 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:34:46 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:37:16 pm - info: temperature changes: 19.5°
+April 29th 2016, 3:37:16 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:37:16 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 3:37:21 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:37:21 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:37:21 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:37:26 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:37:26 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:37:26 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:38:26 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:38:26 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:38:26 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:39:31 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:39:31 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:39:31 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:39:56 pm - info: temperature changes: 19.8°
+April 29th 2016, 3:39:56 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 3:40:01 pm - info: temperature changes: 19.7°
+April 29th 2016, 3:40:01 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:40:01 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 3:40:56 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:40:56 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:40:56 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:42:51 pm - info: temperature changes: 19.5°
+April 29th 2016, 3:42:51 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:42:51 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 3:42:56 pm - info: temperature changes: 19.6°
+April 29th 2016, 3:42:56 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:42:56 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 3:43:01 pm - info: temperature changes: 19.5°
+April 29th 2016, 3:43:01 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:43:01 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 3:54:16 pm - info: temperature changes: 19.4°
+April 29th 2016, 3:54:16 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:54:16 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.4°C
+April 29th 2016, 3:54:21 pm - info: temperature changes: 19.5°
+April 29th 2016, 3:54:21 pm - info: onChange: boiler is already ON
+April 29th 2016, 3:54:21 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:02:21 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:02:21 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:02:21 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:03:06 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:03:06 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:03:06 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:04:51 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:04:51 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:04:51 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:06:31 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:06:32 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:06:32 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:06:42 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:06:42 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:06:42 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:06:47 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:06:47 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:06:47 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:14:57 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:14:57 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:14:57 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:15:02 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:15:02 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:15:02 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:15:17 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:15:17 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:15:17 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:15:22 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:15:22 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:15:22 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:15:37 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:15:37 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:15:37 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:15:42 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:15:42 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:15:42 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:17:42 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:17:42 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:17:42 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:17:52 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:17:52 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:17:52 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:17:57 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:17:57 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:17:57 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:18:02 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:18:02 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:18:02 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:18:17 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:18:17 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:18:17 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:18:27 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:18:27 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:18:27 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:18:42 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:18:42 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:18:42 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:18:47 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:18:47 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:18:47 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:19:52 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:19:52 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:19:52 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:19:57 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:19:57 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:19:57 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:21:42 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:21:42 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:21:42 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:22:27 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:22:27 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:22:27 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:22:32 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:22:32 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:22:32 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:22:47 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:22:47 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:22:47 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:22:52 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:22:52 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:22:52 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:23:17 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:23:17 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:23:17 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:23:22 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:23:22 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:23:22 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:23:27 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:23:27 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:23:27 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:23:47 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:23:47 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:23:47 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:23:52 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:23:52 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:23:52 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:23:57 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:23:57 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:23:57 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:24:02 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:24:02 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:24:02 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:24:17 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:24:17 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:24:17 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:24:22 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:24:22 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:24:22 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:24:32 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:24:32 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:24:32 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:24:37 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:24:37 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:24:37 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:26:57 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:26:57 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:26:57 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:27:22 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:27:22 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:27:22 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:27:32 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:27:32 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:27:32 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:27:37 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:27:37 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:27:37 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:27:42 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:27:42 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:27:42 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:28:27 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:28:27 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:28:27 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:28:38 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:28:38 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:28:38 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:28:43 pm - info: temperature changes: 19.5°
+April 29th 2016, 4:28:43 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:28:43 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.5°C
+April 29th 2016, 4:29:03 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:29:03 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:29:03 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:37:28 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:37:28 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:37:28 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:37:43 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:37:43 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:38:03 pm - info: temperature changes: 19.9°
+April 29th 2016, 4:38:03 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 4:38:28 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:38:28 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:39:23 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:39:23 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:39:23 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:39:28 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:39:28 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:39:33 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:39:33 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:39:33 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:43:18 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:43:18 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:43:33 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:43:33 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:43:33 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:43:53 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:43:53 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:43:58 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:43:58 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:43:58 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:44:03 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:44:03 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:44:08 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:44:08 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:44:08 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:44:13 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:44:13 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:44:18 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:44:18 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:44:18 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:45:03 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:45:03 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:46:33 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:46:33 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:46:33 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:47:53 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:47:53 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:48:08 pm - info: temperature changes: 19.9°
+April 29th 2016, 4:48:08 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 4:48:58 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:48:58 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:49:53 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:49:53 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:49:53 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:50:03 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:50:03 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:50:18 pm - info: temperature changes: 19.9°
+April 29th 2016, 4:50:18 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.9°C
+April 29th 2016, 4:50:48 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:50:48 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:51:43 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:51:43 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:51:43 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:51:48 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:51:48 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:51:53 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:51:53 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:51:53 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:52:48 pm - info: temperature changes: 19.8°
+April 29th 2016, 4:52:48 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.8°C
+April 29th 2016, 4:52:53 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:52:53 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:52:53 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:55:48 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:55:48 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:55:48 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:55:53 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:55:53 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:55:53 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:56:13 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:56:13 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:56:13 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:56:23 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:56:23 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:56:23 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C
+April 29th 2016, 4:58:28 pm - info: temperature changes: 19.6°
+April 29th 2016, 4:58:28 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:58:28 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.6°C
+April 29th 2016, 4:58:33 pm - info: temperature changes: 19.7°
+April 29th 2016, 4:58:33 pm - info: onChange: boiler is already ON
+April 29th 2016, 4:58:33 pm - info: onChange - boiler is ON: 'true', with a temperature of 19.7°C

@@ -17,13 +17,14 @@ var fs = require('fs');
 
 var configFileName = 'config.json';
 
-logger.info("reading '%d'...", configFileName);
+logger.info("reading '"+configFileName+"'...");
 var obj = JSON.parse(fs.readFileSync('./res/'+configFileName, 'utf8'));
 logger.info("completed");
 
 var cron_jobs = [];
 var currentProgram = undefined;
 var programActive = false;
+var overrideActive = false;
 
 /* pins  wiringPi*/
 var pin_boiler_try = 2;
@@ -72,8 +73,8 @@ board.on('ready', function() {
 
       if(currentProgram !== undefined && programActive !== false){
         onChangeTemp(obj.config.program[currentProgram].temp, data.C, obj.config.program[currentProgram].tollerance);
-      } else {
-
+      } else if(overrideActive === true) {
+        onChangeTemp(obj.config.override.temp, data.C, obj.config.override.tollerance);
       }
 
   });
@@ -159,56 +160,69 @@ function onChangeTemp(temp,currentTemp, tollerance){
 }
 
 function createChrono(boiler){
+  if(obj.config.override.active === true){
+      overrideActive = true;
+      logger.info("override mode is active");
+      logger.info("temperature selected: %d", obj.config.override.temp);
+      logger.info("tollerance: %d", obj.config.override.tollerance);
+      if(boiler.isOn){
+        logger.info("chrono: boiler is already ON");
+      } else {
+        boiler.on();
+        logger.info("chrono: boiler is now ON");
+      }
+  } else {
+    logger.info("override mode is not active");
+    logger.info("parsing 'config.json'...");
+    var numberChrono = 0;
+    for (var item of obj.config.program){
+      var numberProgram = clone(numberChrono);
+      var chrono_start = '00 '+item.start.minute+' '+item.start.hour+' * * '+item.day;
+      numberChrono = numberChrono +1
+      logger.info(numberChrono+" chrono start " + chrono_start);
 
-  logger.info("parsing 'config.json'...");
-  var numberChrono = 0;
-  for (var item of obj.config.program){
-    var numberProgram = clone(numberChrono);
-    var chrono_start = '00 '+item.start.minute+' '+item.start.hour+' * * '+item.day;
-    numberChrono = numberChrono +1
-    logger.info(numberChrono+" chrono start " + chrono_start);
+       cron_jobs.push(new CronJob({
+         cronTime: chrono_start,
+         onTick: function() {
+              programActive = true;
+              currentProgram = clone(numberProgram);
+              if(boiler.isOn){
+                logger.info("chrono: boiler is already ON");
+              } else {
+                boiler.on();
+                logger.info("chrono: boiler is now ON");
+              }
+         },
+         start: true,
+         timeZone: 'Europe/Rome'
+       }));
+
+
+
+    var chrono_end = '00 '+item.end.minute+' '+item.end.hour+' * * '+item.day;
+    logger.info(numberChrono + " chrono end " + chrono_end);
 
      cron_jobs.push(new CronJob({
-       cronTime: chrono_start,
+       cronTime: chrono_end,
        onTick: function() {
-            programActive = true;
-            currentProgram = clone(numberProgram);
-            if(boiler.isOn){
-              logger.info("chrono: boiler is already ON");
+            programActive = false;
+            if(!boiler.isOn){
+              logger.info("chrono: boiler is already OFF");
             } else {
-              boiler.on();
-              logger.info("chrono: boiler is now ON");
+              boiler.off();
+              logger.info("chrono: boiler is now OFF");
             }
+
+
        },
        start: true,
        timeZone: 'Europe/Rome'
      }));
 
-
-
-  var chrono_end = '00 '+item.end.minute+' '+item.end.hour+' * * '+item.day;
-  logger.info(numberChrono + " chrono end " + chrono_end);
-
-   cron_jobs.push(new CronJob({
-     cronTime: chrono_end,
-     onTick: function() {
-          programActive = false;
-          if(!boiler.isOn){
-            logger.info("chrono: boiler is already OFF");
-          } else {
-            boiler.off();
-            logger.info("chrono: boiler is now OFF");
-          }
-
-
-     },
-     start: true,
-     timeZone: 'Europe/Rome'
-   }));
-
- }
+   }
 
  logger.info("parsing finished");
+ }
 }
 
 function clone(a) { return JSON.parse(JSON.stringify(a)); }
