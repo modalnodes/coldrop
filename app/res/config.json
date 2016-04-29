@@ -2,44 +2,32 @@
   "config": {
     "program": [{
       "start": {
-        "hour": "23",
-        "minute": "57"
+        "hour": "14",
+        "minute": "00"
       },
       "end": {
-        "hour": "18",
-        "minute": "40"
-      },
-      "temp": 20,
-      "tollerance" : 0,
-      "day": "1-5"
-    },{
-      "start": {
-        "hour": "22",
-        "minute": "48"
-      },
-      "end": {
-        "hour": "01",
-        "minute": "01"
-      },
-      "temp": 20.3,
-      "tollerance" : 0.1,
-      "day": "6"
-    },{
-      "start": {
-        "hour": "20",
-        "minute": "47"
-      },
-      "end": {
-        "hour": "19",
-        "minute": "10"
+        "hour": "16",
+        "minute": "00"
       },
       "temp": 20,
       "tollerance" : 0.2,
-      "day": "0"
+      "day": "6"
+    },{
+      "start": {
+        "hour": "19",
+        "minute": "14"
+      },
+      "end": {
+        "hour": "19",
+        "minute": "40"
+      },
+      "temp": 20,
+      "tollerance" : 0.2,
+      "day": "5"
     }],
     "days": [0, 1, 2, 3, 4, 5, 6],
     "override":{
-      "active": true,
+      "active": false,
       "temp": 20,
       "tollerance" : 0.2
     }

@@ -3,7 +3,7 @@ var raspi = require('raspi-io');
 var five = require('johnny-five');
 
 var boiler;
-var boiler_pin = 7;
+var boiler_pin = 2;
 var name_of_boiler = 'borgoddeo';
 var temp;
 var board = new five.Board({
@@ -25,14 +25,14 @@ board.on('ready', function() {
   });
 
   temp.on("data", function(data, err) {
-    if (err) {
-      console.log(err);
-      return;
-    }
-      console.log("celsius: %d", data.C);
-      console.log("fahrenheit: %d", data.F);
-      console.log("kelvin: %d", data.K);
-      console.log("err: %d", err);
+    // if (err) {
+    //   console.log(err);
+    //   return;
+    // }
+    //   console.log("celsius: %d", data.C);
+    //   console.log("fahrenheit: %d", data.F);
+    //   console.log("kelvin: %d", data.K);
+    //   console.log("err: %d", err);
   });
 
 

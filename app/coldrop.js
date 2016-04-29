@@ -71,10 +71,14 @@ board.on('ready', function() {
       logger.debug("fahrenheit: %d", data.F);
       logger.debug("kelvin: %d", data.K);
 
-      if(currentProgram !== undefined && programActive !== false){
+      if(currentProgram !== undefined && programActive !== false){ // check if exist a program
         onChangeTemp(obj.config.program[currentProgram].temp, data.C, obj.config.program[currentProgram].tollerance);
-      } else if(overrideActive === true) {
+      } else if(overrideActive === true) { //check if override Mode is active
         onChangeTemp(obj.config.override.temp, data.C, obj.config.override.tollerance);
+      } else { // or, in other case, shutdown the boiler
+        if(boiler.isOn){
+          boiler.off(); //
+        }
       }
 
   });
@@ -166,10 +170,10 @@ function createChrono(boiler){
       logger.info("temperature selected: %d", obj.config.override.temp);
       logger.info("tollerance: %d", obj.config.override.tollerance);
       if(boiler.isOn){
-        logger.info("chrono: boiler is already ON");
+        logger.info("override: boiler is already ON");
       } else {
         boiler.on();
-        logger.info("chrono: boiler is now ON");
+        logger.info("override: boiler is now ON");
       }
   } else {
     logger.info("override mode is not active");
