@@ -1,19 +1,10 @@
 /* packages */
 var raspi = require('raspi-io');
-
 var five = require('johnny-five');
 var CronJob = require('cron').CronJob;
-
 var config = require('./res/config');
 var logger = require('./custom/logger');
-
-
 var fs = require('fs');
-
-
-
-
-
 
 var configFileName = 'config.json';
 

@@ -1,0 +1,22 @@
+{
+  "name": "coldrop-backend",
+  "version": "1.0.0",
+  "description": "Backend for coldrop's web interface",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha test/api-integration.test.js"
+  },
+  "author": "Patonz",
+  "repository": {},
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "express": "4.13.4"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "supertest": "1.2.0"
+  }
+}
