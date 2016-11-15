@@ -117,10 +117,15 @@ createChrono(boiler);
         chrono.stop();
       }
       cron_jobs = [];
-      obj = JSON.parse(fs.readFileSync('./res/'+configFileName, 'utf8'));
-      createChrono(boiler);
-       logger.info("realoaded");
-
+      fs.readFile('./res/'+configFileName, "utf8", function(err, data) {
+        if (err) {
+          logger.warning("try to save again the config.json file!");
+          throw err;
+        }
+        obj = JSON.parse(data);
+        createChrono(boiler);
+         logger.info("realoaded");
+    });
     }
   });
 

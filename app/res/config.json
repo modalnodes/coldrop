@@ -1,30 +1,6 @@
 {
   "config": {
-    "program": [{
-      "start": {
-        "hour": "14",
-        "minute": "00"
-      },
-      "end": {
-        "hour": "16",
-        "minute": "00"
-      },
-      "temp": 20,
-      "tollerance" : 0.2,
-      "day": "6"
-    },{
-      "start": {
-        "hour": "19",
-        "minute": "14"
-      },
-      "end": {
-        "hour": "19",
-        "minute": "40"
-      },
-      "temp": 20,
-      "tollerance" : 0.2,
-      "day": "5"
-    }],
+    "program": [],
     "days": [0, 1, 2, 3, 4, 5, 6],
     "override":{
       "active": false,
