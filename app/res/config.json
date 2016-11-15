@@ -1,11 +1,74 @@
 {
   "config": {
-    "program": [],
+    "program": [
+
+      {
+        "start": {
+          "hour": "07",
+          "minute": "00"
+        },
+        "end": {
+          "hour": "19",
+          "minute": "00"
+        },
+        "temp": 20,
+        "tollerance": 0.2,
+        "day": "1"
+      }, {
+        "start": {
+          "hour": "07",
+          "minute": "00"
+        },
+        "end": {
+          "hour": "19",
+          "minute": "00"
+        },
+        "temp": 20,
+        "tollerance": 0.2,
+        "day": "2"
+      }, {
+        "start": {
+          "hour": "07",
+          "minute": "00"
+        },
+        "end": {
+          "hour": "19",
+          "minute": "00"
+        },
+        "temp": 20,
+        "tollerance": 0.2,
+        "day": "3"
+      }, {
+        "start": {
+          "hour": "07",
+          "minute": "00"
+        },
+        "end": {
+          "hour": "19",
+          "minute": "00"
+        },
+        "temp": 20,
+        "tollerance": 0.2,
+        "day": "4"
+      }, {
+        "start": {
+          "hour": "07",
+          "minute": "00"
+        },
+        "end": {
+          "hour": "19",
+          "minute": "00"
+        },
+        "temp": 20,
+        "tollerance": 0.2,
+        "day": "5"
+      }
+    ],
     "days": [0, 1, 2, 3, 4, 5, 6],
-    "override":{
+    "override": {
       "active": false,
       "temp": 20,
-      "tollerance" : 0.2
+      "tollerance": 0.2
     }
   }
 }
