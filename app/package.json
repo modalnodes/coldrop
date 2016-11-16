@@ -8,8 +8,9 @@
     "cron": "1.1.0",
     "johnny-five": "~0.9.35",
     "moment": "^2.13.0",
-    "raspi-io": "5.4.1",
-    "winston": "2.2.0"
+    "raspi-io": "6.1.1",
+    "winston": "2.2.0",
+    "chip-io": "2.0.2"
   },
   "devDependencies": {},
   "repository": {

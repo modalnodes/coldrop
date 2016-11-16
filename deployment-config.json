@@ -1,9 +1,9 @@
 {
     "type": "sftp",
-    "host": "192.168.0.108",
-    "username": "pi",
-    "password": "raspberry",
+    "host": "192.168.0.102",
+    "username": "chip",
+    "password": "chip",
     "port": 22,
-    "remotePath": "/home/pi/coldrop",
+    "remotePath": "/coldrop",
     "uploadOnSave": true
 }
