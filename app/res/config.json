@@ -67,7 +67,7 @@
     ],
     "days": [0, 1, 2, 3, 4, 5, 6],
     "override": {
-      "active": true,
+      "active": false,
       "temp": 23,
       "tollerance": 0.2
     }

@@ -188,6 +188,7 @@ function createChrono(boiler) {
       logger.info("override: boiler is now ON");
     }
   } else {
+     overrideActive = false;
     if (boiler.isOff) {
       logger.info("override: boiler is already OFF");
     } else {
