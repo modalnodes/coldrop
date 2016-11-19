@@ -28,7 +28,7 @@ switch (obj.config.device) {
   logger.info("raspberry device found on config--");
     gpio = require('raspi-io');
     pin_boiler_try = 7;
-    pin_boiler_real = 2;
+    pin_boiler_real = 26;
     break;
   default:
     logger.error("unknown device: check config.json and edit -device- key");
