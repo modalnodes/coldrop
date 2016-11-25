@@ -19,13 +19,13 @@ logger.info("completed");
 
 switch (obj.config.device) {
   case 'chip':
-  logger.info("chip device found on config--");
+    logger.info("chip device found on config--");
     gpio = require('chip-io');
     pin_boiler_try = 'XIO-P2';
     pin_boiler_real = 'XIO-P0';
     break;
   case 'raspberry':
-  logger.info("raspberry device found on config--");
+    logger.info("raspberry device found on config--");
     gpio = require('raspi-io');
     pin_boiler_try = 7;
     pin_boiler_real = 26;
@@ -149,28 +149,39 @@ board.on('ready', function () {
 
 
 function onChangeTemp(temp, currentTemp, tollerance) {
-  var deltaTemp = 0;
-  deltaTemp = currentTemp - temp;
-
-  if (deltaTemp > tollerance) {
-    if (!boiler.isOn) {
-      logger.info("onChange: boiler is already OFF");
-    } else {
-      boiler.off();
-      logger.info("onChange: boiler is now OFF");
-    }
-  }
-  deltaTemp = temp - currentTemp;
-  if (deltaTemp > tollerance) {
+  if (temp == 0) {
     if (boiler.isOn) {
       logger.info("onChange: boiler is already ON");
     } else {
       boiler.on();
       logger.info("onChange: boiler is now ON");
     }
+    return
+  } else {
+    var deltaTemp = 0;
+    deltaTemp = currentTemp - temp;
+
+    if (deltaTemp > tollerance) {
+      if (!boiler.isOn) {
+        logger.info("onChange: boiler is already OFF");
+      } else {
+        boiler.off();
+        logger.info("onChange: boiler is now OFF");
+      }
+    }
+    deltaTemp = temp - currentTemp;
+    if (deltaTemp > tollerance) {
+      if (boiler.isOn) {
+        logger.info("onChange: boiler is already ON");
+      } else {
+        boiler.on();
+        logger.info("onChange: boiler is now ON");
+      }
+    }
+
+    logger.info("onChange - boiler is ON: '" + boiler.isOn + "', with a temperature of %d°C", currentTemp);
   }
 
-  logger.info("onChange - boiler is ON: '" + boiler.isOn + "', with a temperature of %d°C", currentTemp);
 
 
 }
@@ -188,7 +199,7 @@ function createChrono(boiler) {
       logger.info("override: boiler is now ON");
     }
   } else {
-     overrideActive = false;
+    overrideActive = false;
     if (boiler.isOff) {
       logger.info("override: boiler is already OFF");
     } else {
