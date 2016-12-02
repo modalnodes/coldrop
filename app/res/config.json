@@ -12,7 +12,7 @@
           "hour": "20",
           "minute": "00"
         },
-        "temp": 23,
+        "temp": 0,
         "tollerance": 0.2,
         "day": "1"
       }, {
@@ -24,7 +24,7 @@
           "hour": "20",
           "minute": "00"
         },
-        "temp": 23,
+        "temp": 0,
         "tollerance": 0.2,
         "day": "2"
       }, {
@@ -36,7 +36,7 @@
           "hour": "20",
           "minute": "00"
         },
-        "temp": 23,
+        "temp": 0,
         "tollerance": 0.2,
         "day": "3"
       }, {
@@ -48,7 +48,7 @@
           "hour": "20",
           "minute": "00"
         },
-        "temp": 23,
+        "temp": 0,
         "tollerance": 0.2,
         "day": "4"
       }, {
@@ -60,14 +60,14 @@
           "hour": "19",
           "minute": "00"
         },
-        "temp": 23,
+        "temp": 0,
         "tollerance": 0.2,
         "day": "5"
       }
     ],
     "days": [0, 1, 2, 3, 4, 5, 6],
     "override": {
-      "active": true,
+      "active": false,
       "temp": 0,
       "tollerance": 0.1
     }
